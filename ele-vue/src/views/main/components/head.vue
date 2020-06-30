@@ -58,6 +58,7 @@ export default {
       this.checkFix(this.container)
     },
     checkFix(container) {
+      // 获取元素在边框在窗口的位置，{top, bottom, left, right, x, , height, width}具体百度
       const { top, y } = container.getBoundingClientRect()
       const distance = top || y || 0
       if (distance >= 0) {

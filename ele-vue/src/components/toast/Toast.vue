@@ -1,22 +1,22 @@
 <template>
-    <transition name="fade">
-        <div class="m-toast" v-show="show">
-            <span v-if="type === 'success'">成功</span>
-            {{message}}
-        </div>
-    </transition>
+  <transition name="fade">
+    <div v-show="show" class="m-toast">
+      <span v-if="type === 'success'">成功</span>
+      {{message}}
+    </div>
+  </transition>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                show: false,
-                message: '',
-                type: ''
-            }
-        }
+export default {
+  data() {
+    return {
+      show: false,
+      message: '',
+      type: ''
     }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

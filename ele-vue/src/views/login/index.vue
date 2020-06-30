@@ -45,12 +45,14 @@ export default {
     }
   },
   computed: {
+    // 验证邮箱格式
     correntEmialFlag() {
       return this.reg.test(this.email)
     }
   },
   methods: {
     getCode() {
+      // 邮箱格式正确，则能点击获取验证码
       if (this.correntEmialFlag) {
         const params = {
           email: this.email

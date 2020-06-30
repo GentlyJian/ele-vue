@@ -7,12 +7,14 @@
  * @LastEditTime: 2020-03-29 15:37:46
  */
 import Vue from 'vue'
+// 引入滴滴ui库
 import './cube-ui'
 import App from './App.vue'
 import router from './plugins/router'
 import store from './store'
 import filters from './filters'
 import { globalSetting } from '@/common/mixins/common'
+// 引入自定义组件
 import './register'
 
 import Toast from './components/toast/index'
